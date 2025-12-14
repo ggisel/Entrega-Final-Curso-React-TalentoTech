@@ -1,0 +1,60 @@
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  /* fondo violeta pastel */
+  background-color: #d7b3ff;
+}
+
+ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: inline-flex;
+  
+  /* texto violeta oscuro para contraste */
+  color: #4a2b6f;
+  text-decoration: none;
+  font-weight: bold;
+
+  text-align: center;
+  padding: 14px 16px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  /* rosa pastel más luminoso */
+  background-color: #f7c6e0;
+  color: #4a2b6f;
+}
+
+/* hover en el icono carrito */
+nav ul .opcion-carrito:hover {
+  background-color: #f7c6e0;
+}
+
+/* burbuja del carrito */
+.in-cart {
+  background-color: #ff5ca8; /* rosa fuerte para destacar */
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25em 0.25em;
+  display: inline-block;
+  min-width: 25px;
+  text-align: center;
+  margin-left: 0.25rem;
+  justify-content: center;
+}
+
+/* hover en el contenedor del carrito */
+.cart-container:hover {
+  background-color: #f7c6e0;
+}

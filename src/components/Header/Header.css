@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: column;      /* logo arriba, nav abajo */
+  align-items: stretch;        /* permite alinear logo a la izquierda */
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Logo */
+header a {
+  align-self: flex-start;      /* 🔑 logo a la izquierda */
+}
+
+header img {
+  height: 60px;                /* logo chico */
+  width: auto;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  header img {
+    height: 50px;
+  }
+}

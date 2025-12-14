@@ -1,0 +1,139 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.item-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-list-container h2 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  color: #4a2b6f;
+}
+
+/* =========================
+   CARD DEL PRODUCTO (CARRITO)
+========================= */
+
+.item-list-container .product-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 250px;
+  padding: 0.75rem;
+  margin: 0.6rem 0;
+
+  background-color: #f8d7ee;
+  border: 1px solid #d7b3ff;
+  border-radius: 0.75rem;
+
+  box-shadow: 0 2px 8px rgba(215, 179, 255, 0.4);
+}
+
+/* Imagen */
+.item-list-container .product-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* =========================
+   INFO DEL PRODUCTO
+========================= */
+
+.item-list-container .product-item h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #4a2b6f;
+  line-height: 1.1;
+}
+
+.item-list-container .product-item p:first-of-type {
+  margin: 0.1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a2b6f;
+  line-height: 1.1;
+}
+
+.item-list-container .product-item span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6b3fa0;
+  line-height: 1.1;
+}
+
+/* Ocultar descripción */
+.item-list-container .product-item p:nth-of-type(2) {
+  display: none;
+}
+
+/* =========================
+   BOTÓN ELIMINAR
+========================= */
+
+.item-list-container .btn-panaderia-cart-elimimar {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  align-self: center;
+}
+
+/* ======================================================
+   BLOQUE FINAL (TOTAL + BOTONES)
+====================================================== */
+
+.item-list-container .btn-container {
+  width: 100%;
+  max-width: 520px;
+
+  margin: 0.5rem auto 1rem;
+  padding-top: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+
+  border-top: 1px solid #e3cfff;
+}
+
+/* =========================
+   TOTAL A PAGAR (SIN CAJA)
+========================= */
+
+.item-list-container .total-pagar {
+  width: 100%;
+  text-align: center;
+
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #4a2b6f;
+
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* =========================
+   BOTONES (MISMO COLOR)
+========================= */
+
+.item-list-container .btn-container .btn-panaderia {
+  width: 100%;
+  max-width: 260px;
+
+  background-color: #e6d9ff;   /* violeta pastel ecommerce */
+  border: 1px solid #c9a8ff;
+  color: #4a2b6f;
+}
+
+.item-list-container .btn-container .btn-panaderia:hover {
+  background-color: #dccbff;
+}
